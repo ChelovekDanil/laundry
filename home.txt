@@ -1,0 +1,6 @@
+/              # home page for to view all urls
+/api/get/{id}  # the get request with single options. Response data is single user
+/api/getall    # the get request. Response data is all users
+/api/create/   # the post request. Creates a new user
+/api/update/   # the put request. Updates an existing user
+/api/detele/   # the delete request. Deletes an existing user
