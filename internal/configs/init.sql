@@ -2,7 +2,8 @@ CREATE DATABASE laundry;
 
 CREATE TABLE role(
     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-    name VARCHAR(255) NOT NULL
+    name VARCHAR(255) NOT NULL,
+    access_level INT NOT NULL
 );
 
 CREATE TABLE employ(
@@ -17,8 +18,7 @@ CREATE TABLE employ(
 
 CREATE TABLE readiness(
     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    access_level INT NOT NULL
+    name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE address(
@@ -26,8 +26,8 @@ CREATE TABLE address(
     country VARCHAR(255) NOT NULL,
     city VARCHAR(255) NOT NULL,
     street VARCHAR(255) NOT NULL,
-    home VARCHAR(255) NOT NULL,
-    apartment VARCHAR(255) NOT NULL
+    home INT NOT NULL,
+    apartment INT NOT NULL
 );
 
 CREATE TABLE client(
